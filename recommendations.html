@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recommendations</title>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projectdetails.html">Project Details</a>
+            <a href="skills.html">Skills</a>
+            <a href="recommendations.html">Recommendations</a>   
+        </nav>
+        <style>
+            nav {
+                padding: 20px;
+                float: right;
+            }
+        
+            nav a {
+                color: rgb(100, 24, 199);
+                text-decoration: none;
+                padding: 5px 15px;
+                margin: 0 5px;
+                transition: all 0.3s ease;
+            }
+
+            nav a:hover {
+                color: white;
+                text-decoration: underline;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            h2 {text-align: center;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            img {
+                display: block;
+                margin: 20px auto;
+            }
+
+            * {
+                padding: 0;
+                margin: 0;
+                color: rgb(0, 0, 0);
+                padding-bottom: 10px;
+            }
+
+            body{
+                height: 500px;
+                margin: 40px 10px;
+            }
+            
+            .container{
+                display: flex;
+            }
+
+            .box{ 
+                background: black;
+                margin: 11px 30px;
+                text-align: center;
+                padding: 18px;
+                font-family: 'Courier New', Courier, monospace
+            }
+
+            .box img{
+                height: 100px;
+                width: 100px;
+                
+            }
+
+            #box1{
+                background: #f7f380
+
+            }
+
+            #box2{
+                background: #86ffdd
+
+            }
+
+            #box3{
+                background: #f47fa6
+
+            }
+
+            h3 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 24px;
+                margin-bottom: 20px
+            }
+
+            textarea {
+                width: 100%;
+                height: 150px;
+                font-family: Cursive;
+                font-size: 18px
+            }
+        </style>
+        <h1 style="font-family: Cursive; font-size:50px; color:rgb(14, 13, 13)">Madison Lexington</h1>      
+        </style>
+        <style>
+            form {
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+
+            form {
+                background-color: #aa8ad2;
+                padding: 20px;
+                border-radius: 10px;
+                width: 600px;
+                margin: auto;
+                text-align: left;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 10px;
+                font-family: Arial, sans-serif;
+            }
+    
+            input, textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+            }
+    
+            button {
+                background-color: #5e3a6f;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body style="background-color: hwb(273 82% 4%)">
+    <div>
+        <h2 class="centered-title">Recommendations</h2>
+    </div>
+    <img src="https://cdn.pixabay.com/photo/2017/06/30/09/04/system-2457648_1280.jpg" alt="Skills" width="300" height="300">
+<p>Madison's recommendations reveal the client's strengths based on the individuals she has worked with firsthand.</p>
+<br>
+    <p><strong><u> Below you will find Mrs. Lexington's top 3 recommendations: </u></strong> </p>
+    <style>
+        p {font-size: 18px;
+        }
+    </style>
+    
+    <div class="container">
+      <div class="box" id="box1">
+        <img src="https://cdn.pixabay.com/photo/2023/02/06/21/32/ai-generated-7772789_1280.jpg" alt="gatita">
+        <h3>Recommendation #1</h3>
+        <p>"I highly recommend Madison Lexington for her exceptional problem-solving skills. Her dedication will make her a valuable asset to your company's team."</p> <p><strong> -Sharla Meadows</strong></p>
+      </div>
+      <div class="box" id="box2">
+        <img src="https://cdn.pixabay.com/photo/2023/10/22/18/27/ai-generated-8334558_1280.jpg" alt="grey gatita">
+        <h3>Recommendation #2</h3>
+        <p>"Madison is definitely a collaborative team player. She is always ready to lead her team with great support. As a result, I definitely recommend for her to join your company!"</p> <p><strong> -Charlotte Sprinkles</strong></p>
+      </div>
+      <div class="box" id="box3">
+        <img src="https://cdn.pixabay.com/photo/2023/05/27/17/37/ai-generated-8021965_1280.jpg" alt="black cat">
+        <h3>Recommendation #3</h3>
+        <p>"Mrs. Lexington is very creative, which has set her apart in every project that she works on. Her vision and approach have provided valuable insight to very important projects."</p> <p><strong> -Kelly Cupcake</strong></p>
+      </div>
+    </div>
+    <br><br><br>
+    <h2> Leave a Recommendation </h2>
+    <form id="recommendationForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    
+        <button type="button" onclick="submitRecommendation()">Submit Recommendation</button>
+    </form>
+    
+    <script>
+        function submitRecommendation() {
+            // Perform any additional processing or validation here
+    
+            // Show the popup
+            alert("Thank you for submitting a recommendation!");
+    
+            // You can also customize a more advanced popup/modal here if needed
+        }
+    </script>
+        <!-- Bottom right corner link with home icon -->
+            <a href="index.html" class="button-right-link">
+                <img align="right" src="https://cdn.pixabay.com/photo/2013/07/12/12/56/home-146585_1280.png" alt="Home Icon" width="50" height="50">
+            </a>
+        <br>
+  </body>
+</html>
